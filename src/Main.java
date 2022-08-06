@@ -63,9 +63,28 @@ public class Main {
                 System.out.println("Осень");
                 break;
         }
+        //Шестое задание
+        int age = 19;
+        double salary = 58_000;
+        double increasingTheLimit12 = 1.2;
+        double increasingTheLimit15 = 1.5;
+        double increasingCredit2 = salary * 2;
+        double increasingCredit3 = salary * 3;
+        if (age >= 23 && salary >= 50_000 && salary <= 80_000) {
+            System.out.println("Мы готовы вам выдать крелитную карту с лимитом " + increasingCredit3 * increasingTheLimit12 + " рублей");
+        }
+        if (age >= 23 && salary >= 80_000) {
+            System.out.println("Мы готовы вам выдать крелитную карту с лимитом " + increasingCredit3 * increasingTheLimit15 + " рублей");
+        }
+        if (age <= 23 && salary >= 50_000 && salary <= 80_000) {
+            System.out.println("Мы готовы вам выдать крелитную карту с лимитом " + increasingCredit2 * increasingTheLimit12 + " рублей");
+        }
+        if (age <= 23 && salary >= 80_000) {
+            System.out.println("Мы готовы вам выдать крелитную карту с лимитом " + increasingCredit3 * increasingTheLimit12 + " рублей");
+        }
 
 
         }
 
+
     }
-}
