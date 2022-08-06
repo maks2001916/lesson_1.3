@@ -82,9 +82,35 @@ public class Main {
         if (age <= 23 && salary >= 80_000) {
             System.out.println("Мы готовы вам выдать крелитную карту с лимитом " + increasingCredit3 * increasingTheLimit12 + " рублей");
         }
-
+        //седьмое задание
+        int ageTwo = 25;
+        double baseRate = 12;
+        int salaryTwo = 60_000;
+        int loanTerm = 12;
+        int saloryMinLimit = 80_000;
+        double monthlyPayment = 0;
+        double MaxMonthlyPayment = salaryTwo * 0.5;
+        int wantedSum = 330_000;
+        if (ageTwo < 23) {} else if (ageTwo >= 23 && ageTwo < 30) {
+            if (salaryTwo > saloryMinLimit) {
+                baseRate = baseRate + 0.005 - 0.07;
+                monthlyPayment = ((wantedSum + wantedSum * baseRate) + 12);
+                if (MaxMonthlyPayment > monthlyPayment) {
+                    System.out.println("Максимальный платёж при ЗП " + salaryTwo + " Рублей " + MaxMonthlyPayment + " рублей по кредиту " + monthlyPayment + " рублей одобрено");
+                } else
+                    System.out.println("Максимальный платёж при ЗП " + salaryTwo + " Рублей " + MaxMonthlyPayment + " рублей по кредиту " + monthlyPayment + " рублей отказано");
+            } else
+                baseRate = baseRate + 0.005;
+            monthlyPayment = ((wantedSum + wantedSum * baseRate) / 12);
+            if (MaxMonthlyPayment > monthlyPayment) {
+                System.out.println("Максимальный платёж при ЗП " + salaryTwo + " рублей равен " + MaxMonthlyPayment + " рублей. Платёж по кредиту " + monthlyPayment + " рублей. Одобрено");
+            } else
+                System.out.println("Максимальный платёж при ЗП " + salaryTwo + " рублей равен " + MaxMonthlyPayment + " рублей. Платёж по кредиту " + monthlyPayment + " рублей. Отказано");
 
         }
+
+
+    }
 
 
     }
