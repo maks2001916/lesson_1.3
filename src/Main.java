@@ -23,7 +23,7 @@ public class Main {
         }
         //третье задание
         int year = 2021;
-        if (year % 4 == 0 || year % 400 == 0) {
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println("год является високосным");
         } else {
             System.out.println("Год не является високосным");
@@ -91,7 +91,7 @@ public class Main {
         double monthlyPayment = 0;
         double MaxMonthlyPayment = salaryTwo * 0.5;
         int wantedSum = 330_000;
-        if (ageTwo < 23) {} else if (ageTwo >= 23 && ageTwo < 30) {
+        if (ageTwo >= 23 && ageTwo < 30) {
             if (salaryTwo > saloryMinLimit) {
                 baseRate = baseRate + 0.005 - 0.07;
                 monthlyPayment = ((wantedSum + wantedSum * baseRate) + 12);
